@@ -10,13 +10,15 @@ import SwiftUI
 
 struct FeedRootView: View {
     var body: some View {
-        List {
-            FeedHeader()
-                .listRowInsets(EdgeInsets())
-            Text("feed item 1")
-            Text("feed item 2")
-            Text("feed item 3")
-        }.edgesIgnoringSafeArea(.top)
+        NavigationView {
+            List {
+                Text("feed item 1")
+                Text("feed item 2")
+                Text("feed item 3")
+            }
+            .navigationBarTitle("Feed")
+            .navigationBarItems(trailing: ProfileButton())
+        }
     }
 }
 

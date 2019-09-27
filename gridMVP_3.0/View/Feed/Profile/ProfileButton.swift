@@ -12,19 +12,19 @@ struct ProfileButton: View {
     @State var showingProfile = false
     
     var body: some View {
-        VStack {
-            Button(action: { self.showingProfile.toggle()
-                print("\(self.showingProfile)")
-            }, label: {
-                Image("Profile Pic")
-            })
-                .sheet(isPresented: $showingProfile, onDismiss: {
-                    self.showingProfile = false
-                    print("profile view dismissed")
-                }, content: {
-                    ProfileView()
-                })
+        Image("Profile Pic")
+            .resizable()
+            .frame(width: 40, height: 40)
+            .offset(x: -10)
+            .onTapGesture {
+                self.showingProfile.toggle()
         }
+        .sheet(isPresented: $showingProfile, onDismiss: {
+            self.showingProfile = false
+            print("profile view dismissed")
+        }, content: {
+            ProfileView()
+        })
     }
 }
 
