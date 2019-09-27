@@ -15,13 +15,24 @@ struct ContentView: View {
         TabView(selection: $selectedView) {
             FeedRootView().tabItem {
                 Text("Feed")
-                Image("home")
+                Image("feed")
             }.tag(1)
-            
             GroupRootView().tabItem {
                 Text("Groups")
-                Image("chapters-active")
+                Image("groups")
             }.tag(2)
+            ExploreRootView().tabItem {
+                Text("Explore")
+                Image("explore")
+            }.tag(3)
+            DiscoverRootView().tabItem {
+                Text("Discover")
+                Image("discover")
+            }.tag(4)
+            EventsRootView().tabItem {
+                Text("Events")
+                Image("events")
+            }.tag(5)
         }.accentColor(Color("PurpleNurple"))
     }
 }

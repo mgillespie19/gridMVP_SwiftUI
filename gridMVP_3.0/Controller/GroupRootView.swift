@@ -11,10 +11,12 @@ import Foundation
 
 struct GroupRootView: View {
     var body: some View {
-        List {
-            Text("Group item 1")
-            Text("Group item 2")
-            Text("Group item 3")
+        NavigationView {
+            List {
+                Text("Group item 1")
+                Text("Group item 2")
+                Text("Group item 3")
+            }.navigationBarTitle(Text("Groups"))
         }
     }
 }

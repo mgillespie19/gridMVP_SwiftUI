@@ -10,11 +10,16 @@ import SwiftUI
 
 struct FeedRootView: View {
     var body: some View {
-        List {
-            Text("feed item 1")
-            Text("feed item 2")
-            Text("feed item 3")
+        NavigationView {
+            List {
+                Text("feed item 1")
+                Text("feed item 2")
+                Text("feed item 3")
+            }
+            .navigationBarTitle(Text("Feed"))
         }
+        
+        
     }
 }
 
