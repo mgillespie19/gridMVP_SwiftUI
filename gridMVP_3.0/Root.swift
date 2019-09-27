@@ -37,7 +37,7 @@ struct ContentView: View {
             }.accentColor(Color("PurpleNurple"))
             
             ExploreButton()
-        }
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 

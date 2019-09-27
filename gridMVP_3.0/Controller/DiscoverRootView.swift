@@ -9,12 +9,28 @@
 import SwiftUI
 
 struct DiscoverRootView: View {
+    @State private var searchCity = ""
+    
     var body: some View {
-        VStack {
+        ZStack {
             MapView()
-            .edgesIgnoringSafeArea(.top)
-        }.edgesIgnoringSafeArea(.top)
-        
+                .edgesIgnoringSafeArea(.top)
+            
+//            VStack {
+//                VStack {
+//                    TextField("Enter City", text: $searchCity)
+//                        .padding()
+//                    Text("Showing events in \(self.searchCity)")
+//                        .padding()
+//                }
+//                .background(Color.gray)
+//                .shadow(radius: 10)
+//                .cornerRadius(15)
+//                
+//                Spacer()
+//            }
+            
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

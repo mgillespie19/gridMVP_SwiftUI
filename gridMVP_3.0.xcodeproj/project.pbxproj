@@ -24,6 +24,9 @@
 		F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */; };
 		F6CDF7D5233EA8350091F622 /* ExploreTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */; };
 		F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D8233EAB420091F622 /* MapView.swift */; };
+		F6CDF7E0233EB3580091F622 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7DF233EB3580091F622 /* Group.swift */; };
+		F6CDF7E2233EB36A0091F622 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */; };
+		F6CDF7E4233EB3770091F622 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E3233EB3770091F622 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreButton.swift; sourceTree = "<group>"; };
 		F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTitleView.swift; sourceTree = "<group>"; };
 		F6CDF7D8233EAB420091F622 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F6CDF7DF233EB3580091F622 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		F6CDF7E3233EB3770091F622 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 		F6CDF7C5233E783F0091F622 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7DF233EB3580091F622 /* Group.swift */,
+				F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */,
+				F6CDF7E3233EB3770091F622 /* SampleData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,8 +177,8 @@
 		F6CDF7C6233E78460091F622 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7DD233EB0E00091F622 /* Discover */,
 				F6CDF7DA233EACC10091F622 /* Explore */,
-				F6CDF7D8233EAB420091F622 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +202,14 @@
 				F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */,
 			);
 			path = Explore;
+			sourceTree = "<group>";
+		};
+		F6CDF7DD233EB0E00091F622 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7D8233EAB420091F622 /* MapView.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,11 +349,14 @@
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
 				F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */,
 				F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */,
+				F6CDF7E2233EB36A0091F622 /* CalendarEvent.swift in Sources */,
+				F6CDF7E0233EB3580091F622 /* Group.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */,
 				F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */,
 				F688EFDD233D4AB200323C04 /* gridMVP_3_0.xcdatamodeld in Sources */,
 				F6CDF7D5233EA8350091F622 /* ExploreTitleView.swift in Sources */,
+				F6CDF7E4233EB3770091F622 /* SampleData.swift in Sources */,
 				F6CDF7CF233E878B0091F622 /* DiscoverRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

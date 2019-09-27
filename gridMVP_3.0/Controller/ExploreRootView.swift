@@ -11,24 +11,6 @@ import SwiftUI
 struct ExploreRootView: View {
     var body: some View {
         VStack {
-//            VStack {
-//                Rectangle()
-//                .frame(width: 60, height: 6)
-//                .cornerRadius(3)
-//                .opacity(0.2)
-//                .padding(.top)
-//
-//                HStack {
-//                    Text("Explore")
-//                        .font(.largeTitle)
-//                        .fontWeight(.heavy)
-//                        .foregroundColor(Color.white)
-//                        .padding()
-//                    Spacer()
-//                }
-//            }
-//            .background(Color("Pink"))
-            
             ZStack {
                 List {
                     ExploreTitleView()
@@ -39,7 +21,6 @@ struct ExploreRootView: View {
                     Text("haven't yet programmed")
                 }
                 .edgesIgnoringSafeArea(.all)
-            
             }
         }
     }
