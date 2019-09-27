@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ExploreRootView: View {
     var body: some View {
-        Text("Explore")
+        ZStack {
+            VStack {
+                Text("Explore")
+            }
+        }
     }
 }
 

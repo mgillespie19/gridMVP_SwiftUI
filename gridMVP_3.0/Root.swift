@@ -12,28 +12,32 @@ struct ContentView: View {
     @State var selectedView = 1
     
     var body: some View {
-        TabView(selection: $selectedView) {
-            FeedRootView().tabItem {
-                Text("Feed")
-                Image("feed")
-            }.tag(1)
-            GroupRootView().tabItem {
-                Text("Groups")
-                Image("groups")
-            }.tag(2)
-            ExploreRootView().tabItem {
-                Text("Explore")
-                Image("explore")
-            }.tag(3)
-            DiscoverRootView().tabItem {
-                Text("Discover")
-                Image("discover")
-            }.tag(4)
-            EventsRootView().tabItem {
-                Text("Events")
-                Image("events")
-            }.tag(5)
-        }.accentColor(Color("PurpleNurple"))
+        ZStack {
+            TabView(selection: $selectedView) {
+                FeedRootView().tabItem {
+                    Text("Feed")
+                    Image("feed")
+                }.tag(1)
+                GroupRootView().tabItem {
+                    Text("Groups")
+                    Image("groups")
+                }.tag(2)
+                ExploreRootView().tabItem {
+                    Text("Explore")
+                    Image("explore")
+                }.tag(3)
+                DiscoverRootView().tabItem {
+                    Text("Discover")
+                    Image("discover")
+                }.tag(4)
+                EventsRootView().tabItem {
+                    Text("Events")
+                    Image("events")
+                }.tag(5)
+            }.accentColor(Color("PurpleNurple"))
+            
+            ExploreButton()
+        }
     }
 }
 

@@ -10,10 +10,12 @@ import SwiftUI
 
 struct EventsRootView: View {
     var body: some View {
-        List {
-            Text("Event 1")
-            Text("Event 2")
-            Text("Event 3")
+        NavigationView {
+            List {
+                Text("Event 1")
+                Text("Event 2")
+                Text("Event 3")
+            }.navigationBarTitle(Text("Upcoming Events"))
         }
     }
 }

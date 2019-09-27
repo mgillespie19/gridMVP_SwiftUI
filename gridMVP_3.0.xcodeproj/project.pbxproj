@@ -21,6 +21,7 @@
 		F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7CC233E87800091F622 /* ExploreRootView.swift */; };
 		F6CDF7CF233E878B0091F622 /* DiscoverRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */; };
 		F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D0233E87940091F622 /* EventsRootView.swift */; };
+		F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F6CDF7CC233E87800091F622 /* ExploreRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRootView.swift; sourceTree = "<group>"; };
 		F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRootView.swift; sourceTree = "<group>"; };
 		F6CDF7D0233E87940091F622 /* EventsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRootView.swift; sourceTree = "<group>"; };
+		F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
 				F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */,
 				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
+				F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */,
 				F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */,
 				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
 			);
@@ -312,6 +315,7 @@
 				F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
+				F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */,
 				F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */,
