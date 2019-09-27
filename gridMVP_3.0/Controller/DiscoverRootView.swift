@@ -26,11 +26,11 @@ struct DiscoverRootView: View {
 //                .background(Color.gray)
 //                .shadow(radius: 10)
 //                .cornerRadius(15)
-//                
+//
 //                Spacer()
 //            }
             
-        }.edgesIgnoringSafeArea(.all)
+        }
     }
 }
 

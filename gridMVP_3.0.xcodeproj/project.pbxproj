@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F666952C233EBEF700AC42CA /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F666952B233EBEF700AC42CA /* ProfileButton.swift */; };
 		F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EFD7233D4AB200323C04 /* AppDelegate.swift */; };
 		F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EFD9233D4AB200323C04 /* SceneDelegate.swift */; };
 		F688EFDD233D4AB200323C04 /* gridMVP_3_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F688EFDB233D4AB200323C04 /* gridMVP_3_0.xcdatamodeld */; };
@@ -27,6 +28,8 @@
 		F6CDF7E0233EB3580091F622 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7DF233EB3580091F622 /* Group.swift */; };
 		F6CDF7E2233EB36A0091F622 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */; };
 		F6CDF7E4233EB3770091F622 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E3233EB3770091F622 /* SampleData.swift */; };
+		F6CDF7E7233EB5560091F622 /* FeedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E6233EB5560091F622 /* FeedHeader.swift */; };
+		F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E8233EBBE20091F622 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F666952B233EBEF700AC42CA /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		F688EFD4233D4AB200323C04 /* gridMVP_3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridMVP_3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F688EFD7233D4AB200323C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F688EFD9233D4AB200323C04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		F6CDF7DF233EB3580091F622 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 		F6CDF7E3233EB3770091F622 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		F6CDF7E6233EB5560091F622 /* FeedHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeader.swift; sourceTree = "<group>"; };
+		F6CDF7E8233EBBE20091F622 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,7 @@
 		F6CDF7C6233E78460091F622 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7E5233EB54C0091F622 /* Feed */,
 				F6CDF7DD233EB0E00091F622 /* Discover */,
 				F6CDF7DA233EACC10091F622 /* Explore */,
 			);
@@ -189,7 +196,6 @@
 				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
 				F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */,
 				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
-				F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */,
 				F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */,
 				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
 			);
@@ -199,6 +205,7 @@
 		F6CDF7DA233EACC10091F622 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */,
 				F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */,
 			);
 			path = Explore;
@@ -210,6 +217,24 @@
 				F6CDF7D8233EAB420091F622 /* MapView.swift */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		F6CDF7E5233EB54C0091F622 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7EA233EBBE60091F622 /* Profile */,
+				F6CDF7E6233EB5560091F622 /* FeedHeader.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F6CDF7EA233EBBE60091F622 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
+				F666952B233EBEF700AC42CA /* ProfileButton.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,11 +371,14 @@
 				F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */,
 				F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
+				F666952C233EBEF700AC42CA /* ProfileButton.swift in Sources */,
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
 				F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */,
 				F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */,
 				F6CDF7E2233EB36A0091F622 /* CalendarEvent.swift in Sources */,
 				F6CDF7E0233EB3580091F622 /* Group.swift in Sources */,
+				F6CDF7E7233EB5560091F622 /* FeedHeader.swift in Sources */,
+				F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */,
 				F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */,
