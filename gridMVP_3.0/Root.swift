@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedView = 1
+    
     var body: some View {
-        Text("Hello World")
+        TabView(selection: $selectedView) {
+            FeedRootView().tabItem {
+                Text("Feed")
+                Image("home")
+            }.tag(1)
+            
+            GroupRootView().tabItem {
+                Text("Groups")
+            }.tag(2)
+        }.accentColor(Color("Pink"))
     }
 }
 
