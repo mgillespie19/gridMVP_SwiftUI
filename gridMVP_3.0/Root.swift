@@ -20,8 +20,9 @@ struct ContentView: View {
             
             GroupRootView().tabItem {
                 Text("Groups")
+                Image("chapters-active")
             }.tag(2)
-        }.accentColor(Color("Pink"))
+        }.accentColor(Color("PurpleNurple"))
     }
 }
 
