@@ -10,7 +10,11 @@ import SwiftUI
 
 struct DiscoverRootView: View {
     var body: some View {
-        Text("Discover")
+        VStack {
+            MapView()
+            .edgesIgnoringSafeArea(.top)
+        }.edgesIgnoringSafeArea(.top)
+        
     }
 }
 

@@ -22,6 +22,8 @@
 		F6CDF7CF233E878B0091F622 /* DiscoverRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */; };
 		F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D0233E87940091F622 /* EventsRootView.swift */; };
 		F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */; };
+		F6CDF7D5233EA8350091F622 /* ExploreTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */; };
+		F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7D8233EAB420091F622 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRootView.swift; sourceTree = "<group>"; };
 		F6CDF7D0233E87940091F622 /* EventsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRootView.swift; sourceTree = "<group>"; };
 		F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreButton.swift; sourceTree = "<group>"; };
+		F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTitleView.swift; sourceTree = "<group>"; };
+		F6CDF7D8233EAB420091F622 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 		F6CDF7C6233E78460091F622 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7DA233EACC10091F622 /* Explore */,
+				F6CDF7D8233EAB420091F622 /* MapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +185,14 @@
 				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F6CDF7DA233EACC10091F622 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */,
+				F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
 				F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */,
@@ -321,6 +336,7 @@
 				F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */,
 				F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */,
 				F688EFDD233D4AB200323C04 /* gridMVP_3_0.xcdatamodeld in Sources */,
+				F6CDF7D5233EA8350091F622 /* ExploreTitleView.swift in Sources */,
 				F6CDF7CF233E878B0091F622 /* DiscoverRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
