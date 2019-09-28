@@ -12,7 +12,7 @@ struct FeedRootView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("feed item 1")
+                FeedHeader()
                 Text("feed item 2")
                 Text("feed item 3")
             }

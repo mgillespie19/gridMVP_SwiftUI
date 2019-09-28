@@ -29,7 +29,7 @@ struct ExploreTitleView: View {
             }
             .background(Color("Pink"))
             
-            Image("Explore-background")
+            Image("Explore Background")
                 .resizable()
                 .scaledToFit()
                 .shadow(radius: 5)

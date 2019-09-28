@@ -9,29 +9,15 @@
 import SwiftUI
 
 struct FeedHeader: View {
+    var date = "September 27, 2019"
+    
     var body: some View {
-        ZStack {
-            Image("Feed Header")
-                .resizable()
-                .scaledToFit()
-            
-            VStack {
-                HStack() {
-                    VStack(alignment: .leading) {
-                        Text("Your Feed")
-                            .fontWeight(.heavy)
-                            .font(.largeTitle)
-                        Text("Friday, September 27, 2019")
-                            .fontWeight(.light)
-                            .font(.body)
-                    }
-                    .foregroundColor(Color.white)
-                    .offset(x: -20)
-                    
-                    ProfileButton()
-                        .offset(y: -10)
-                }
-            }
+        VStack (alignment: .leading) {
+            Text(self.date)
+                .offset(y: -15)
+            FeedOptions()
+                .offset(y: -8)
+            .shadow(radius: 5)
         }
         
     }

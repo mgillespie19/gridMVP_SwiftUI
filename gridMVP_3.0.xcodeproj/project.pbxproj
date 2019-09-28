@@ -17,6 +17,7 @@
 		F688EFE7233D4AB300323C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F688EFE5233D4AB300323C04 /* LaunchScreen.storyboard */; };
 		F688EFF2233D4AB300323C04 /* gridMVP_3_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EFF1233D4AB300323C04 /* gridMVP_3_0Tests.swift */; };
 		F688EFFD233D4AB300323C04 /* gridMVP_3_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EFFC233D4AB300323C04 /* gridMVP_3_0UITests.swift */; };
+		F6C81BCC233ECB72001FF388 /* FeedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C81BCB233ECB72001FF388 /* FeedOptions.swift */; };
 		F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7C8233E785C0091F622 /* FeedRootView.swift */; };
 		F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */; };
 		F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7CC233E87800091F622 /* ExploreRootView.swift */; };
@@ -66,6 +67,7 @@
 		F688EFF8233D4AB300323C04 /* gridMVP_3.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gridMVP_3.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F688EFFC233D4AB300323C04 /* gridMVP_3_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridMVP_3_0UITests.swift; sourceTree = "<group>"; };
 		F688EFFE233D4AB300323C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C81BCB233ECB72001FF388 /* FeedOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOptions.swift; sourceTree = "<group>"; };
 		F6CDF7C8233E785C0091F622 /* FeedRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRootView.swift; sourceTree = "<group>"; };
 		F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRootView.swift; sourceTree = "<group>"; };
 		F6CDF7CC233E87800091F622 /* ExploreRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRootView.swift; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 		F688EFD6233D4AB200323C04 /* gridMVP_3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				F6CDF7C7233E784A0091F622 /* Controller */,
+				F6CDF7C7233E784A0091F622 /* Root Views */,
 				F6CDF7C6233E78460091F622 /* View */,
 				F6CDF7C5233E783F0091F622 /* Model */,
 				F688EFD7233D4AB200323C04 /* AppDelegate.swift */,
@@ -170,6 +172,15 @@
 			path = gridMVP_3.0UITests;
 			sourceTree = "<group>";
 		};
+		F6C81BCD233ECE6E001FF388 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
+				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		F6CDF7C5233E783F0091F622 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,16 +201,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F6CDF7C7233E784A0091F622 /* Controller */ = {
+		F6CDF7C7233E784A0091F622 /* Root Views */ = {
 			isa = PBXGroup;
 			children = (
-				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
+				F6C81BCD233ECE6E001FF388 /* Feed */,
 				F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */,
 				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
 				F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */,
 				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
 			);
-			path = Controller;
+			path = "Root Views";
 			sourceTree = "<group>";
 		};
 		F6CDF7DA233EACC10091F622 /* Explore */ = {
@@ -224,6 +235,7 @@
 			children = (
 				F6CDF7EA233EBBE60091F622 /* Profile */,
 				F6CDF7E6233EB5560091F622 /* FeedHeader.swift */,
+				F6C81BCB233ECB72001FF388 /* FeedOptions.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -231,7 +243,6 @@
 		F6CDF7EA233EBBE60091F622 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
 				F666952B233EBEF700AC42CA /* ProfileButton.swift */,
 			);
 			path = Profile;
@@ -368,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C81BCC233ECB72001FF388 /* FeedOptions.swift in Sources */,
 				F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */,
 				F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
