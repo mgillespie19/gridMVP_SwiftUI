@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct FeedOptions: View {
+struct FeedButtonBar: View {
     @State var showFeedFilters = false
     @State var showScanQR = false
     @State var showNewPost = false
@@ -16,6 +16,7 @@ struct FeedOptions: View {
     var TAG = "FO: "
     
     var body: some View {
+        // TODO: look into Picker instead of this. buttons only work once
         HStack {
             Spacer()
             Text("Filter")
@@ -46,6 +47,8 @@ struct FeedOptions: View {
             }
             Spacer()
         }
+        .sheet(isPresented: $showScanQR, content: { FeedScanQRView() })
+        .sheet(isPresented: $showNewPost, content: { FeedMakePostView() })
         .background(Color("Secondary-2"))
         .cornerRadius(5)
     }
@@ -53,6 +56,6 @@ struct FeedOptions: View {
 
 struct FeedOptions_Previews: PreviewProvider {
     static var previews: some View {
-        FeedOptions()
+        FeedButtonBar()
     }
 }

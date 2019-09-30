@@ -15,7 +15,7 @@ struct FeedHeader: View {
         VStack (alignment: .leading) {
             Text(self.date)
                 .offset(y: -15)
-            FeedOptions()
+            FeedButtonBar()
                 .offset(y: -8)
             .shadow(radius: 5)
         }
