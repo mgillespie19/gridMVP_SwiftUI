@@ -135,9 +135,9 @@
 		F688EFD6233D4AB200323C04 /* gridMVP_3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				F6CDF7C7233E784A0091F622 /* Root Views */,
-				F6CDF7C6233E78460091F622 /* View */,
-				F6CDF7C5233E783F0091F622 /* Model */,
+				F6CDF7C6233E78460091F622 /* Views */,
+				F69F47A423429A9D005A8CB1 /* ViewModels */,
+				F6CDF7C5233E783F0091F622 /* Models */,
 				F688EFD7233D4AB200323C04 /* AppDelegate.swift */,
 				F688EFD9233D4AB200323C04 /* SceneDelegate.swift */,
 				F688EFDE233D4AB200323C04 /* Root.swift */,
@@ -176,68 +176,97 @@
 			path = gridMVP_3.0UITests;
 			sourceTree = "<group>";
 		};
-		F6C81BCD233ECE6E001FF388 /* Feed */ = {
+		F69F47A323429A82005A8CB1 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
-				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
+				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F69F47A423429A9D005A8CB1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F69F47A523429AA6005A8CB1 /* Feed */,
+				F69F47A623429AAE005A8CB1 /* Groups */,
+				F69F47A923429AC1005A8CB1 /* Discover */,
+				F69F47A823429ABC005A8CB1 /* Explore */,
+				F69F47A723429AB7005A8CB1 /* Events */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F69F47A523429AA6005A8CB1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		F69F47A623429AAE005A8CB1 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		F69F47A723429AB7005A8CB1 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F69F47A823429ABC005A8CB1 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		F69F47A923429AC1005A8CB1 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		F6C81BCE233FB41B001FF388 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */,
+				F6C81BD2233FB44D001FF388 /* GroupDetail.swift */,
 				F6C81BCF233FB437001FF388 /* GroupMemberCell.swift */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
 		};
-		F6C81BD1233FB43E001FF388 /* Group */ = {
-			isa = PBXGroup;
-			children = (
-				F6CDF7CA233E78AD0091F622 /* GroupRootView.swift */,
-				F6C81BD2233FB44D001FF388 /* GroupDetail.swift */,
-			);
-			path = Group;
-			sourceTree = "<group>";
-		};
-		F6CDF7C5233E783F0091F622 /* Model */ = {
+		F6CDF7C5233E783F0091F622 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F6CDF7DF233EB3580091F622 /* Group.swift */,
 				F6CDF7E1233EB36A0091F622 /* CalendarEvent.swift */,
 				F6CDF7E3233EB3770091F622 /* SampleData.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		F6CDF7C6233E78460091F622 /* View */ = {
+		F6CDF7C6233E78460091F622 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F6C81BCE233FB41B001FF388 /* Groups */,
 				F6CDF7E5233EB54C0091F622 /* Feed */,
+				F6C81BCE233FB41B001FF388 /* Groups */,
 				F6CDF7DD233EB0E00091F622 /* Discover */,
 				F6CDF7DA233EACC10091F622 /* Explore */,
+				F69F47A323429A82005A8CB1 /* Events */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F6CDF7C7233E784A0091F622 /* Root Views */ = {
-			isa = PBXGroup;
-			children = (
-				F6C81BCD233ECE6E001FF388 /* Feed */,
-				F6C81BD1233FB43E001FF388 /* Group */,
-				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
-				F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */,
-				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
-			);
-			path = "Root Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F6CDF7DA233EACC10091F622 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
 				F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */,
 				F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */,
 			);
@@ -247,6 +276,7 @@
 		F6CDF7DD233EB0E00091F622 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7CE233E878B0091F622 /* DiscoverRootView.swift */,
 				F6CDF7D8233EAB420091F622 /* MapView.swift */,
 			);
 			path = Discover;
@@ -255,6 +285,8 @@
 		F6CDF7E5233EB54C0091F622 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
+				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
 				F6CDF7EA233EBBE60091F622 /* Profile */,
 				F6CDF7E6233EB5560091F622 /* FeedHeader.swift */,
 				F6C81BCB233ECB72001FF388 /* FeedOptions.swift */,
