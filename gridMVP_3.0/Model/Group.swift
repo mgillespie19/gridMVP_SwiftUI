@@ -9,16 +9,17 @@
 import Foundation
 import UIKit
 
-class Group {
+class Group: Identifiable {
     let name: String
-    //    let id: String  ; this is going to be used to create a dictionary of seen groups within the app ?
+    let id: Int
     let type: String
     let description: String
     let image: UIImage
     let fontColor: UIColor
     let hideLabel: Bool
     
-    init(n: String, t: String, d: String, fc: UIColor, i: UIImage, hl: Bool) {
+    init(ID: Int, n: String, t: String, d: String, fc: UIColor, i: UIImage, hl: Bool) {
+        self.id = ID
         self.name = n
         self.type = t
         self.description = d
@@ -27,7 +28,8 @@ class Group {
         self.hideLabel = hl
     }
     
-    init(n: String, t: String, d: String, hl: Bool) {
+    init(ID: Int, n: String, t: String, d: String, hl: Bool) {
+        self.id = ID
         self.name = n
         self.type = t
         self.description = d

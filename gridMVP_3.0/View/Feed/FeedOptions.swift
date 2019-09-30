@@ -21,6 +21,7 @@ struct FeedOptions: View {
             Spacer()
             Text("Filter")
                 .font(.headline)
+                .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
                     self.showFeedFilters.toggle()
@@ -29,6 +30,7 @@ struct FeedOptions: View {
             Spacer()
             Text("Scan QR")
                 .font(.headline)
+                .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
                     self.showScanQR.toggle()
@@ -37,6 +39,7 @@ struct FeedOptions: View {
             Spacer()
             Text("Post")
                 .font(.headline)
+                .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
                     self.showNewPost.toggle()
@@ -44,7 +47,7 @@ struct FeedOptions: View {
             }
             Spacer()
         }
-        .background(Color.white)
+        .background(Color("Secondary-2"))
         .cornerRadius(5)
     }
 }
