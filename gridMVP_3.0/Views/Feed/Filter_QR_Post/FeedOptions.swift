@@ -15,7 +15,6 @@ struct FeedOptions: View {
     
     var TAG = "FO: "
     
-    
     var body: some View {
         HStack {
             Spacer()
