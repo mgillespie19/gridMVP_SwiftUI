@@ -13,7 +13,8 @@ struct GroupRootView: View {
     var body: some View {
         NavigationView {
             List(groups) { group in
-                Text("\(group.name)")
+                GroupMemberCell(groupName: group.name)
+                    .listRowInsets(EdgeInsets())
             }.navigationBarTitle(Text("Groups"))
         }
     }

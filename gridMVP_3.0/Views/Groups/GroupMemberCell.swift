@@ -9,13 +9,25 @@
 import SwiftUI
 
 struct GroupMemberCell: View {
+    var groupName: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("xccelerate 2")
+                .resizable()
+                .scaledToFit()
+            Text(self.groupName)
+                .padding()
+            
+        }
+        .background(Color.black)
+        .cornerRadius(15)
+        .shadow(radius: 5)
     }
 }
 
 struct GroupMemberCell_Previews: PreviewProvider {
     static var previews: some View {
-        GroupMemberCell()
+        GroupMemberCell(groupName: "name")
     }
 }

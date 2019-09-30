@@ -231,6 +231,15 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
+		F69F47AA23429CA5005A8CB1 /* Filter_QR_Post */ = {
+			isa = PBXGroup;
+			children = (
+				F6CDF7E6233EB5560091F622 /* FeedHeader.swift */,
+				F6C81BCB233ECB72001FF388 /* FeedOptions.swift */,
+			);
+			path = Filter_QR_Post;
+			sourceTree = "<group>";
+		};
 		F6C81BCE233FB41B001FF388 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,10 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				F6CDF7C8233E785C0091F622 /* FeedRootView.swift */,
-				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
 				F6CDF7EA233EBBE60091F622 /* Profile */,
-				F6CDF7E6233EB5560091F622 /* FeedHeader.swift */,
-				F6C81BCB233ECB72001FF388 /* FeedOptions.swift */,
+				F69F47AA23429CA5005A8CB1 /* Filter_QR_Post */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 		F6CDF7EA233EBBE60091F622 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F6CDF7E8233EBBE20091F622 /* ProfileView.swift */,
 				F666952B233EBEF700AC42CA /* ProfileButton.swift */,
 			);
 			path = Profile;
