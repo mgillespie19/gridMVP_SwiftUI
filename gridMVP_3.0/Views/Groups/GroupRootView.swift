@@ -10,10 +10,12 @@ import SwiftUI
 import Foundation
 
 struct GroupRootView: View {
+//    @ObservedObject
+    
     var body: some View {
         NavigationView {
             List(groups) { group in
-                GroupMemberCell(groupName: group.name)
+                GroupCell(groupName: group.name, imageName: "xccelerate 2", color: group.fontColor)
                     .listRowInsets(EdgeInsets())
             }.navigationBarTitle(Text("Groups"))
         }

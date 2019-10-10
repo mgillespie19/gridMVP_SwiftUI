@@ -7,18 +7,26 @@
 //
 
 import SwiftUI
+import UIKit
 
-struct GroupMemberCell: View {
+struct GroupCell: View {
     var groupName: String
+    var imageName: String
+    var color: UIColor
     
     var body: some View {
-        ZStack {
-            Image("xccelerate 2")
+        ZStack(alignment: .bottomLeading) {
+            Image(self.imageName)
                 .resizable()
                 .scaledToFit()
-            Text(self.groupName)
-                .padding()
             
+            HStack {
+                Text(self.groupName)
+                    .padding()
+                    .font(.custom("Courier New Bold", size: 18))
+                Spacer()
+            }
+            .padding()
         }
         .background(Color.black)
         .cornerRadius(15)
@@ -28,6 +36,6 @@ struct GroupMemberCell: View {
 
 struct GroupMemberCell_Previews: PreviewProvider {
     static var previews: some View {
-        GroupMemberCell(groupName: "name")
+        GroupCell(groupName: "a name", imageName: "xccelerate 2", color: .black)
     }
 }

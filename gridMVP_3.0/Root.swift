@@ -35,7 +35,6 @@ struct ContentView: View {
                     Image("events")
                 }.tag(5)
             }.accentColor(Color("PurpleNurple"))
-            
             ExploreButton()
         }.edgesIgnoringSafeArea(.top)
     }

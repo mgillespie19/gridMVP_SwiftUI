@@ -14,23 +14,17 @@ struct ExploreButton: View {
     var body: some View {
         VStack {
             Spacer()
-            HStack {
-                Spacer()
-                Spacer()
-                Button(action: {
-                    self.displayingExplore.toggle()
-                }) {
-                    Image("explore")
-                        .padding()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .foregroundColor(Color.white)
-                }
-                .background(Color("Pink"))
-                .cornerRadius(10)
-                .shadow(radius: 4)
-                Spacer()
-                Spacer()
+            Button(action: {
+                self.displayingExplore.toggle()
+            }) {
+                Image("explore")
+                    .padding()
+                    .frame(minWidth: 0, maxWidth: 100)
+                    .foregroundColor(Color.white)
             }
+            .background(Color("Pink"))
+            .cornerRadius(10)
+            .shadow(radius: 4)
         }.sheet(isPresented: $displayingExplore, content: { ExploreRootView() })
     }
 }
