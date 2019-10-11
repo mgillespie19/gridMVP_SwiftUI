@@ -15,7 +15,7 @@ struct GroupCell: View {
     var color: UIColor
     
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
+        ZStack(alignment: Alignment.bottomLeading) {
             Image(self.imageName)
                 .resizable()
                 .scaledToFit()

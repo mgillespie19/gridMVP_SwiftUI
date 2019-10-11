@@ -18,7 +18,7 @@ struct ContentView: View {
                     Text("Feed")
                     Image("feed")
                 }.tag(1)
-                GroupRootView().tabItem {
+                GroupRootView(viewModel: GroupRootViewModel()).tabItem {
                     Text("Groups")
                     Image("groups")
                 }.tag(2)

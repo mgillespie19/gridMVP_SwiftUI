@@ -10,20 +10,22 @@ import SwiftUI
 import Foundation
 
 struct GroupRootView: View {
-//    @ObservedObject
+    @ObservedObject var viewModel: GroupRootViewModel
     
     var body: some View {
         NavigationView {
-            List(groups) { group in
+            List(viewModel.groups) { group in
                 GroupCell(groupName: group.name, imageName: "xccelerate 2", color: group.fontColor)
                     .listRowInsets(EdgeInsets())
             }.navigationBarTitle(Text("Groups"))
         }
+        .onAppear(perform: viewModel.load)
+        .onDisappear(perform: viewModel.cancel)
     }
 }
 
 struct GroupRootView_Previews: PreviewProvider {
     static var previews: some View {
-        GroupRootView()
+        GroupRootView(viewModel: GroupRootViewModel())
     }
 }
