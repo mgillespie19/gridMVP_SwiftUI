@@ -13,9 +13,6 @@ struct FeedButtonBar: View {
     @State var showScanQR = false
     @State var showNewPost = false
     
-    @State private var modalSelection = 1
-    @State var showModal = false
-    
     var TAG = "FO: "
     
     var body: some View {
@@ -26,9 +23,7 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-//                    self.showFeedFilters.toggle()
-                    self.showModal.toggle()
-                    self.modalSelection = 1
+                    self.showFeedFilters.toggle()
                     print(self.TAG, "filters called")
             }
             Spacer()
@@ -37,9 +32,7 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-//                    self.showScanQR.toggle()
-                    self.showModal.toggle()
-                    self.modalSelection = 2
+                    self.showScanQR.toggle()
                     print(self.TAG, "QR called")
             }
             Spacer()
@@ -48,26 +41,15 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-//                    self.showNewPost.toggle()
-                    self.showModal.toggle()
-                    self.modalSelection = 3
+                    self.showNewPost.toggle()
                     print(self.TAG, "new post called")
             }
             Spacer()
         }
-        .sheet(isPresented: $showModal, content: {
-//            if(self.showModal == 1) {
-//                FeedScanQRView()
-//            }
-//            else if (self.showModal == 2) {
-//                FeedScanQRView()
-//            }
-            FeedMakePostView()
-        })
+        .background(EmptyView().sheet(isPresented: $showScanQR, content: { FeedScanQRView() }))
+        .background(EmptyView().sheet(isPresented: $showNewPost, content: { FeedMakePostView() }))
         .background(Color("Secondary-2"))
         .cornerRadius(5)
-        
-        
     }
 }
 
