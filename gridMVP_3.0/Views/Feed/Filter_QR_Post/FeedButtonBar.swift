@@ -13,10 +13,12 @@ struct FeedButtonBar: View {
     @State var showScanQR = false
     @State var showNewPost = false
     
+    @State private var modalSelection = 1
+    @State var showModal = false
+    
     var TAG = "FO: "
     
     var body: some View {
-        // TODO: look into Picker instead of this. buttons only work once
         HStack {
             Spacer()
             Text("Filter")
@@ -24,7 +26,9 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-                    self.showFeedFilters.toggle()
+//                    self.showFeedFilters.toggle()
+                    self.showModal.toggle()
+                    self.modalSelection = 1
                     print(self.TAG, "filters called")
             }
             Spacer()
@@ -33,7 +37,9 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-                    self.showScanQR.toggle()
+//                    self.showScanQR.toggle()
+                    self.showModal.toggle()
+                    self.modalSelection = 2
                     print(self.TAG, "QR called")
             }
             Spacer()
@@ -42,15 +48,26 @@ struct FeedButtonBar: View {
                 .foregroundColor(Color("Secondary-1-Font"))
                 .padding()
                 .onTapGesture {
-                    self.showNewPost.toggle()
+//                    self.showNewPost.toggle()
+                    self.showModal.toggle()
+                    self.modalSelection = 3
                     print(self.TAG, "new post called")
             }
             Spacer()
         }
-        .sheet(isPresented: $showScanQR, content: { FeedScanQRView() })
-        .sheet(isPresented: $showNewPost, content: { FeedMakePostView() })
+        .sheet(isPresented: $showModal, content: {
+//            if(self.showModal == 1) {
+//                FeedScanQRView()
+//            }
+//            else if (self.showModal == 2) {
+//                FeedScanQRView()
+//            }
+            FeedMakePostView()
+        })
         .background(Color("Secondary-2"))
         .cornerRadius(5)
+        
+        
     }
 }
 
