@@ -15,8 +15,9 @@ struct GroupRootView: View {
     var body: some View {
         NavigationView {
             List(viewModel.groups) { group in
-                GroupCell(groupName: group.name, imageName: "xccelerate 2", color: group.fontColor)
+                GroupCell(groupName: group.name, image: group.image, color: group.fontColor)
                     .listRowInsets(EdgeInsets())
+                    .frame(maxHeight: 130)
             }.navigationBarTitle(Text("Groups"))
         }
         .onAppear(perform: viewModel.load)
