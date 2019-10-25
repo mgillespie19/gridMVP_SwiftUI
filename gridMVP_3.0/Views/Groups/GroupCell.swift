@@ -12,26 +12,26 @@ import UIKit
 struct GroupCell: View {
     var groupName: String
     var image: UIImage
-    var color: UIColor
+    var color: Color
     
     var body: some View {
         ZStack(alignment: Alignment.bottomLeading) {
             Image(uiImage: self.image)
                 .resizable()
-                .scaledToFill()
-                .frame(maxHeight: 130)
-            
+                .aspectRatio(contentMode: ContentMode.fill)
+                .frame(height: 130)
+                .clipShape(Rectangle())
             HStack {
                 Text(self.groupName)
                     .padding()
                     .font(.custom("Courier New Bold", size: 18))
+                    .foregroundColor(self.color)
                 Spacer()
             }
             .padding()
         }
         .background(Color.black)
         .cornerRadius(15)
-        .frame(maxHeight: 130)
         .shadow(radius: 5)
     }
 }

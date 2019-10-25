@@ -19,7 +19,7 @@ struct GroupDetail: View {
 struct GroupDetail_Previews: PreviewProvider {
     static var previews: some View {
         GroupDetail(
-            group: Group(ID: 000, n: "Xccelerate", t: "Campus Club", d: "We are a club with the intention of inspiring entrepreneurs!", fc: UIColor(displayP3Red: 39/255, green: 91/255, blue: 196/255, alpha: 1), i: UIImage(named: "Xccelerate_sample")!, hl: false)
+            group: Group(ID: 000, n: "Xccelerate", t: "Campus Club", d: "We are a club with the intention of inspiring entrepreneurs!", fc: Color(red: 39/255, green: 91/255, blue: 196/255), i: UIImage(named: "Xccelerate_sample")!, hl: false)
         )
     }
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class Group: Identifiable {
     let name: String
@@ -15,10 +16,10 @@ class Group: Identifiable {
     let type: String
     let description: String
     let image: UIImage
-    let fontColor: UIColor
+    let fontColor: Color
     let hideLabel: Bool
     
-    init(ID: Int, n: String, t: String, d: String, fc: UIColor, i: UIImage, hl: Bool) {
+    init(ID: Int, n: String, t: String, d: String, fc: Color, i: UIImage, hl: Bool) {
         self.id = ID
         self.name = n
         self.type = t
@@ -33,7 +34,7 @@ class Group: Identifiable {
         self.name = n
         self.type = t
         self.description = d
-        self.fontColor = UIColor.white
+        self.fontColor = Color.white
         self.image = UIImage(named: "Group Background 1")!
         self.hideLabel = hl
     }

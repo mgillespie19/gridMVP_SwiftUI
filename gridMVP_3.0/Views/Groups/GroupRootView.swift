@@ -17,7 +17,6 @@ struct GroupRootView: View {
             List(viewModel.groups) { group in
                 GroupCell(groupName: group.name, image: group.image, color: group.fontColor)
                     .listRowInsets(EdgeInsets())
-                    .frame(maxHeight: 130)
             }.navigationBarTitle(Text("Groups"))
         }
         .onAppear(perform: viewModel.load)
