@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61423C0236413CB00133260 /* FeedGroupRecommendationBar1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61423BF236413CB00133260 /* FeedGroupRecommendationBar1.swift */; };
+		F61423C22364149300133260 /* FeedGroupRecommendationViewModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61423C12364149300133260 /* FeedGroupRecommendationViewModel1.swift */; };
+		F61423C42364178900133260 /* FeedRecCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61423C32364178900133260 /* FeedRecCell1.swift */; };
 		F61FDA1223464CE800DD4B0F /* GroupCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FDA1123464CE800DD4B0F /* GroupCellViewModel.swift */; };
 		F61FDA142346761E00DD4B0F /* GroupDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FDA132346761E00DD4B0F /* GroupDetailViewModel.swift */; };
 		F61FDA162346842300DD4B0F /* GroupRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FDA152346842300DD4B0F /* GroupRootViewModel.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61423BF236413CB00133260 /* FeedGroupRecommendationBar1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGroupRecommendationBar1.swift; sourceTree = "<group>"; };
+		F61423C12364149300133260 /* FeedGroupRecommendationViewModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGroupRecommendationViewModel1.swift; sourceTree = "<group>"; };
+		F61423C32364178900133260 /* FeedRecCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRecCell1.swift; sourceTree = "<group>"; };
 		F61FDA1123464CE800DD4B0F /* GroupCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCellViewModel.swift; sourceTree = "<group>"; };
 		F61FDA132346761E00DD4B0F /* GroupDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewModel.swift; sourceTree = "<group>"; };
 		F61FDA152346842300DD4B0F /* GroupRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRootViewModel.swift; sourceTree = "<group>"; };
@@ -216,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				F6BC51C623639FCA00453821 /* FeedHeaderViewModel.swift */,
+				F61423C12364149300133260 /* FeedGroupRecommendationViewModel1.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -267,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				F6BC51C923640EDC00453821 /* FeedPost.swift */,
+				F61423BF236413CB00133260 /* FeedGroupRecommendationBar1.swift */,
+				F61423C32364178900133260 /* FeedRecCell1.swift */,
 			);
 			path = Feed_items;
 			sourceTree = "<group>";
@@ -477,6 +486,7 @@
 				F6BC51C723639FCA00453821 /* FeedHeaderViewModel.swift in Sources */,
 				F61FDA162346842300DD4B0F /* GroupRootViewModel.swift in Sources */,
 				F6CDF7C9233E785C0091F622 /* FeedRootView.swift in Sources */,
+				F61423C22364149300133260 /* FeedGroupRecommendationViewModel1.swift in Sources */,
 				F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
 				F69F47B02342A017005A8CB1 /* FeedMakePostView.swift in Sources */,
@@ -484,11 +494,13 @@
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
 				F6CDF7D3233E9BC50091F622 /* ExploreButton.swift in Sources */,
 				F6CDF7CD233E87800091F622 /* ExploreRootView.swift in Sources */,
+				F61423C42364178900133260 /* FeedRecCell1.swift in Sources */,
 				F69F47AE2342A000005A8CB1 /* FeedScanQRView.swift in Sources */,
 				F6CDF7E2233EB36A0091F622 /* CalendarEvent.swift in Sources */,
 				F6CDF7E0233EB3580091F622 /* Group.swift in Sources */,
 				F6CDF7E7233EB5560091F622 /* FeedHeader.swift in Sources */,
 				F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */,
+				F61423C0236413CB00133260 /* FeedGroupRecommendationBar1.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F61FDA142346761E00DD4B0F /* GroupDetailViewModel.swift in Sources */,
 				F6CDF7CB233E78AD0091F622 /* GroupRootView.swift in Sources */,

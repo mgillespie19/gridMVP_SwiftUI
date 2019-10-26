@@ -18,11 +18,13 @@ struct FeedPost: View {
             HStack (alignment: .bottom) {
                 Image(uiImage: self.profilePic)
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 44, height: 44)
                 Text(self.userName)
                     .font(.title)
                     .fontWeight(.semibold)
+                    .padding(.leading)
             }
+            .padding(.top)
             Text(self.postContent)
                 .font(.body)
         }
