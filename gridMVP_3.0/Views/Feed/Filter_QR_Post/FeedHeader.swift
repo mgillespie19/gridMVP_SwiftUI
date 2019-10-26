@@ -9,22 +9,23 @@
 import SwiftUI
 
 struct FeedHeader: View {
-    var date = "September 27, 2019"
+    @ObservedObject var viewModel: FeedHeaderViewModel
     
     var body: some View {
         VStack (alignment: .leading) {
-            Text(self.date)
+            Text(self.viewModel.dateText)
                 .offset(y: -15)
             FeedButtonBar()
                 .offset(y: -8)
             .shadow(radius: 5)
-        }
-        
+        }.onAppear(perform: {
+            self.viewModel.load()
+        })
     }
 }
 
 struct FeedHeader_Previews: PreviewProvider {
     static var previews: some View {
-        FeedHeader()
+        FeedHeader(viewModel: FeedHeaderViewModel())
     }
 }

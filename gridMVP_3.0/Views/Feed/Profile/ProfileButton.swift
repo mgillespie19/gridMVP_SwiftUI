@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ProfileButton: View {
     @State var showingProfile = false
+    var profilePic: UIImage
     
     var body: some View {
         Image("Profile Pic")
@@ -30,6 +31,6 @@ struct ProfileButton: View {
 
 struct ProfileButton_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileButton()
+        ProfileButton(profilePic: UIImage(named: "Profile Pic")!)
     }
 }

@@ -12,12 +12,12 @@ struct FeedRootView: View {
     var body: some View {
         NavigationView {
             List {
-                FeedHeader()
-                Text("feed item 2")
+                FeedHeader(viewModel: FeedHeaderViewModel())
+                FeedPost(profilePic: UIImage(named: "Profile Pic")!, userName: "Max Gillespie", postContent: "This is an example of a post you might see! \n Cool right? \n Well I think so, so HA")
                 Text("feed item 3")
             }
             .navigationBarTitle("Feed")
-            .navigationBarItems(trailing: ProfileButton())
+            .navigationBarItems(trailing: ProfileButton(profilePic: UIImage(named: "Profile Pic")!))
         }
     }
 }
