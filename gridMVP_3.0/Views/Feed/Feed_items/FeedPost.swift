@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct FeedPost: View {
+    @State var showingProfileView = false
+    
     var profilePic: UIImage
     var userName: String
     var postContent: String
@@ -19,15 +21,30 @@ struct FeedPost: View {
                 Image(uiImage: self.profilePic)
                     .resizable()
                     .frame(width: 44, height: 44)
-                Text(self.userName)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .padding(.leading)
+                    .onTapGesture {
+                        self.showingProfileView.toggle()
+                    }
+                VStack {
+                    Text(self.userName)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .onTapGesture {
+                            self.showingProfileView.toggle()
+                    }
+                    Text("org name")
+                        .font(.body)
+                }
+                .padding(.leading)
             }
             .padding(.top)
             Text(self.postContent)
                 .font(.body)
-        }
+        }.sheet(isPresented: $showingProfileView, onDismiss: {
+            self.showingProfileView = false
+            print("profile view dismissed")
+        }, content: {
+            ProfileView()
+        })
     }
 }
 
