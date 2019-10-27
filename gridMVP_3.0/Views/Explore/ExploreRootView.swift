@@ -10,19 +10,22 @@ import SwiftUI
 
 struct ExploreRootView: View {
     var body: some View {
-        VStack {
-            ZStack {
-                List {
-                    ExploreTitleView()
-                        .listRowInsets(EdgeInsets())
-                    Text("this is")
-                    Text("definitely")
-                    Text("another list I")
-                    Text("haven't yet programmed")
+        ScrollView (.vertical, showsIndicators: false) {
+            VStack {
+                ExploreTitleView()
+                
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(Color("Clay"))
+                        .opacity(0.8)
+                        .frame(height: 600)
+                        .cornerRadius(15)
+                        .shadow(radius: 20)
+                        .padding()
+                        .offset(y: -230)
                 }
-                .edgesIgnoringSafeArea(.all)
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

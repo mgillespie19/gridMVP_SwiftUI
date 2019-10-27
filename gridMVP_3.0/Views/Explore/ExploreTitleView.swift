@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ExploreTitleView: View {
+    @State var filterSelection = 0
+    
     var body: some View {
         VStack {
             VStack {
@@ -35,7 +37,9 @@ struct ExploreTitleView: View {
                     .scaledToFit()
                     .shadow(radius: 5)
                     .offset(y: -30)
-                ExploreSearchFilterMatrix1()
+                VStack (alignment: .leading) {
+                    ExploreSearchFilterMatrix1()
+                }
             }
         }
     }

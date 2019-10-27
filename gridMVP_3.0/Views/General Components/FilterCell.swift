@@ -22,7 +22,7 @@ struct FilterCell: View {
                 .font(.body)
                 .fontWeight(.light)
                 .foregroundColor(selected ? Color("Pink") : Color.white)
-                .frame(width: 110, height: 45)
+                .frame(width: 110, height: 55)
         })
             .background(selected ? Color.white : Color.clear)
             .cornerRadius(15, antialiased: false)
