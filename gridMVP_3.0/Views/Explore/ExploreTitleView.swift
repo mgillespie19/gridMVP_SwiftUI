@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ExploreTitleView: View {
     var body: some View {
-         VStack {
+        VStack {
             VStack {
                 Rectangle()
                     .frame(width: 60, height: 6)
@@ -29,12 +29,15 @@ struct ExploreTitleView: View {
             }
             .background(Color("Pink"))
             
-            Image("Explore Background")
-                .resizable()
-                .scaledToFit()
-                .shadow(radius: 5)
-                .offset(y: -10)
-         }
+            ZStack (alignment: Alignment.top) {
+                Image("Explore Background")
+                    .resizable()
+                    .scaledToFit()
+                    .shadow(radius: 5)
+                    .offset(y: -30)
+                ExploreSearchFilterMatrix1()
+            }
+        }
     }
 }
 

@@ -12,15 +12,25 @@ import Foundation
 struct GroupRootView: View {
     @ObservedObject var viewModel: GroupRootViewModel
     
+    @State var showGroupDetail = false
+    @State var selectedGroup: Group?
+    
     var body: some View {
         NavigationView {
             List(viewModel.groups) { group in
                 GroupCell(groupName: group.name, image: group.image, color: group.fontColor)
                     .listRowInsets(EdgeInsets())
+                    .onTapGesture {
+                        self.showGroupDetail.toggle()
+                        self.selectedGroup = group
+                    }
             }.navigationBarTitle(Text("Groups"))
         }
         .onAppear(perform: viewModel.load)
         .onDisappear(perform: viewModel.cancel)
+        .sheet(isPresented: $showGroupDetail, content: {
+            GroupDetail(group: self.selectedGroup ?? Group(ID: 0, Name: "ERROR", Type: "error", Description: "this group did not load correctly", FontColor: Color.black, Image: UIImage(named: "Xccelerate 2")!, HideLabel: false))
+        })
     }
 }
 

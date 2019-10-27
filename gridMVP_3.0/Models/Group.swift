@@ -19,14 +19,14 @@ class Group: Identifiable {
     let fontColor: Color
     let hideLabel: Bool
     
-    init(ID: Int, n: String, t: String, d: String, fc: Color, i: UIImage, hl: Bool) {
+    init(ID: Int, Name: String, Type: String, Description: String, FontColor: Color, Image: UIImage, HideLabel: Bool) {
         self.id = ID
-        self.name = n
-        self.type = t
-        self.description = d
-        self.fontColor = fc
-        self.image = i
-        self.hideLabel = hl
+        self.name = Name
+        self.type = Type
+        self.description = Description
+        self.fontColor = FontColor
+        self.image = Image
+        self.hideLabel = HideLabel
     }
     
     init(ID: Int, n: String, t: String, d: String, hl: Bool) {

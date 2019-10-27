@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct FeedPost: View {
+struct FeedPostView: View {
     @State var showingProfileView = false
     
     var profilePic: UIImage
@@ -17,14 +17,14 @@ struct FeedPost: View {
     
     var body: some View {
         VStack (alignment: .leading) {
-            HStack (alignment: .bottom) {
+            HStack (alignment: .top) {
                 Image(uiImage: self.profilePic)
                     .resizable()
                     .frame(width: 44, height: 44)
                     .onTapGesture {
                         self.showingProfileView.toggle()
                     }
-                VStack {
+                VStack (alignment: .leading) {
                     Text(self.userName)
                         .font(.subheadline)
                         .fontWeight(.semibold)
@@ -39,7 +39,8 @@ struct FeedPost: View {
             .padding(.top)
             Text(self.postContent)
                 .font(.body)
-        }.sheet(isPresented: $showingProfileView, onDismiss: {
+        }
+        .sheet(isPresented: $showingProfileView, onDismiss: {
             self.showingProfileView = false
             print("profile view dismissed")
         }, content: {
@@ -48,8 +49,8 @@ struct FeedPost: View {
     }
 }
 
-struct FeedPost_Previews: PreviewProvider {
+struct FeedPostView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedPost(profilePic: UIImage(named: "Profile Pic")!, userName: "Max Gillespie", postContent: "this is an example of a post you might see in your feed!")
+        FeedPostView(profilePic: UIImage(named: "Profile Pic")!, userName: "Max Gillespie", postContent: "this is an example of a post you might see in your feed!")
     }
 }

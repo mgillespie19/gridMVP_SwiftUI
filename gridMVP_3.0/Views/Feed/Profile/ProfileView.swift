@@ -9,8 +9,48 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State var updateProfilePicture = false
+    
     var body: some View {
-        Text("Profile View")
+        VStack (alignment: .leading) {
+            HStack {
+                Image("Profile Pic")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .onTapGesture {
+                        self.updateProfilePicture.toggle()
+                    }
+                Spacer()
+                VStack (alignment: .trailing) {
+                    Text("Max Gillespie")
+                        .font(.largeTitle)
+                    HStack {
+                        Text("Pittsburgh, PA")
+                            .font(.caption)
+                        Text("|")
+                        Text ("Member since 2019")
+                            .font(.caption)
+                    }
+                }
+                
+            }
+            .padding()
+            
+            
+            VStack (alignment: .leading) {
+                Text("Description")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                Text("Mobile Application Developer with a specific interest in launching new ideas and learning in a fast-paced work environment.\n\nI have a strong proficiency in Swift and Kotlin, as well as blockchain technology such as Ethereum and other solidity-based currencies.")
+            }.padding()
+            
+            
+            
+            Spacer()
+        }
+        .sheet(isPresented: $updateProfilePicture, content: {
+            UpdateProfilePictureView()
+        })
     }
 }
 
