@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ExploreTitleView: View {
     @State var filterSelection = 0
+     
+    @State private var searchText = ""
     
     var body: some View {
         VStack {
@@ -21,13 +23,21 @@ struct ExploreTitleView: View {
                     .padding(.top)
                 
                 HStack {
-                    Text("Explore")
-                        .font(.largeTitle)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.white)
-                        .padding()
+//                    Text("Explore")
+//                        .font(.largeTitle)
+//                        .fontWeight(.heavy)
+//                        .foregroundColor(Color.white)
+//                        .padding()
+                    TextField("search for a group...", text: $searchText)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    .padding()
+                    .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    
                     Spacer()
                 }
+                
+                
             }
             .background(Color("Pink"))
             
@@ -36,7 +46,7 @@ struct ExploreTitleView: View {
                     .resizable()
                     .scaledToFit()
                     .shadow(radius: 5)
-                    .offset(y: -30)
+                    .offset(y: -10)
                 VStack (alignment: .leading) {
                     ExploreSearchFilterMatrix1()
                 }
