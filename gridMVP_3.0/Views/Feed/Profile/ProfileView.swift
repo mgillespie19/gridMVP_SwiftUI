@@ -24,12 +24,13 @@ struct ProfileView: View {
                 VStack (alignment: .trailing) {
                     Text("Max Gillespie")
                         .font(.largeTitle)
-                    HStack {
+                    HStack (alignment: .top) {
                         Text("Pittsburgh, PA")
                             .font(.caption)
                         Text("|")
                         Text ("Member since 2019")
                             .font(.caption)
+                            .multilineTextAlignment(.trailing)
                     }
                 }
                 

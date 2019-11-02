@@ -14,10 +14,9 @@ struct FeedHeader: View {
     var body: some View {
         VStack (alignment: .leading) {
             Text(self.viewModel.dateText)
-                .offset(y: -15)
+                .offset(x: 14, y: -22)
             FeedButtonBar()
                 .offset(y: -8)
-            .shadow(radius: 5)
         }.onAppear(perform: {
             self.viewModel.load()
         })

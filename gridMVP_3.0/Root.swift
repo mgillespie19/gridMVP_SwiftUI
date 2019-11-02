@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @State var selectedView = 1
@@ -16,11 +17,11 @@ struct ContentView: View {
             TabView(selection: $selectedView) {
                 FeedRootView().tabItem {
                     Text("Feed")
-                    Image("feed")
+                    Image(systemName: "house")
                 }.tag(1)
                 GroupRootView(viewModel: GroupRootViewModel()).tabItem {
                     Text("Groups")
-                    Image("groups")
+                    Image(systemName: "person.3")
                 }.tag(2)
                 ExploreRootView().tabItem {
                     Text("Explore")
@@ -28,13 +29,14 @@ struct ContentView: View {
                 }.tag(3)
                 DiscoverRootView().tabItem {
                     Text("Discover")
-                    Image("discover")
+                    Image(systemName: "map")
                 }.tag(4)
                 EventsRootView().tabItem {
                     Text("Events")
-                    Image("events")
+                    Image(systemName: "calendar")
                 }.tag(5)
-            }.accentColor(Color("PurpleNurple"))
+            }
+            .accentColor(Color("PurpleNurple"))
             ExploreButton()
         }.edgesIgnoringSafeArea(.top)
     }

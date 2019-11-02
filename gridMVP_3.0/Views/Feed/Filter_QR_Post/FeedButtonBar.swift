@@ -49,7 +49,8 @@ struct FeedButtonBar: View {
         .background(EmptyView().sheet(isPresented: $showScanQR, content: { FeedScanQRView() }))
         .background(EmptyView().sheet(isPresented: $showNewPost, content: { FeedMakePostView() }))
         .background(Color("Secondary-2"))
-        .cornerRadius(5)
+        .cornerRadius(0)
+        .shadow(radius: 5)
     }
 }
 

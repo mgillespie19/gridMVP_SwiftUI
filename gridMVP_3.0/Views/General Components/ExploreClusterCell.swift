@@ -20,6 +20,7 @@ struct ExploreClusterCell: View {
             Text(self.title)
                 .foregroundColor(self.textColor)
         }
+        .shadow(radius: 3)
     }
 }
 

@@ -15,8 +15,6 @@ struct ExploreSearchResultsView: View {
         ZStack {
             VStack{
                 ExploreClusterMatrix1()
-                    .padding(.top)
-                ExploreClusterMatrix1()
                     .padding()
             }
             .background(Color("LightGrey"))

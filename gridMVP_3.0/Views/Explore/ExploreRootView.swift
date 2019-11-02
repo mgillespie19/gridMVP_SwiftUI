@@ -14,7 +14,7 @@ struct ExploreRootView: View {
             VStack {
                 ExploreTitleView()
                 
-                ExploreSearchResultsView(viewModel: ExploreSearchViewModel())
+                ExploreSearchResultsView(viewModel: ExploreSearchViewModel(Filters: [""]))
                     .offset(y: -230)
             }
         }.edgesIgnoringSafeArea(.all)

@@ -35,17 +35,24 @@ struct FeedPostView: View {
                         .font(.body)
                 }
                 .padding(.leading)
+                
+                Spacer()
             }
-            .padding(.top)
+            .padding()
             Text(self.postContent)
                 .font(.body)
+                .padding(.leading)
+                .padding(.trailing)
+                .padding(.bottom)
         }
+        .background(Color.white)
         .sheet(isPresented: $showingProfileView, onDismiss: {
             self.showingProfileView = false
             print("profile view dismissed")
         }, content: {
             ProfileView()
         })
+            .padding(.bottom)
     }
 }
 
