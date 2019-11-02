@@ -10,18 +10,20 @@ import SwiftUI
 
 struct ExploreClusterCell: View {
     var backgroundColor: Color
+    var textColor: Color
     var title: String
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .background(self.backgroundColor)
+            Rectangle() .foregroundColor(self.backgroundColor)
                 .cornerRadius(25)
+            Text(self.title)
+                .foregroundColor(self.textColor)
         }
     }
 }
 
 struct ExploreClusterCell_Previews: PreviewProvider {
-    static var previews: some View {        ExploreClusterCell(backgroundColor: Color.black, title: "This is a sample cell!")
+    static var previews: some View {        ExploreClusterCell(backgroundColor: Color.blue, textColor: Color.white, title: "This is a sample cell!")
     }
 }

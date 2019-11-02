@@ -26,7 +26,7 @@ class GroupRootViewModel: ObservableObject {
     }
     
     func load() {
-        self.groups = sampleGroups
+        self.groups = sampleSubscribedGroups
         
 //      example of fetching images
 //        cancellable = URLSession

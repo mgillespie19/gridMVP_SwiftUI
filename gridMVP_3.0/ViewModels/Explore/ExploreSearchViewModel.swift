@@ -1,25 +1,27 @@
 //
-//  FeedGroupRecommendationViewModel1.swift
+//  ExploreRootViewModel.swift
 //  gridMVP_3.0
 //
-//  Created by Max Gillespie on 10/26/19.
+//  Created by Max Gillespie on 11/1/19.
 //  Copyright © 2019 Max Gillespie. All rights reserved.
 //
 
 import Foundation
-import SwiftUI
+import UIKit
 import Combine
 
-class FeedGroupRecommendationViewModel1: ObservableObject {
+class ExploreSearchViewModel: ObservableObject {
     @Published private(set) var groups: [Group] = []
+    
+    let filters:[String]
     
     private let url: URL
     private var cancellable: AnyCancellable?
     
-    init() {
+    init(Filters: [String]) {
         // change this!
         self.url = URL(string: "www.somewebsite.com")!
-        self.groups = sampleSubscribedGroups
+        self.filters = Filters
     }
     
     deinit {
@@ -27,10 +29,11 @@ class FeedGroupRecommendationViewModel1: ObservableObject {
     }
     
     func load() {
-        self.groups = sampleSubscribedGroups
+        self.groups = sampleExploreResultGroups
     }
     
     func cancel() {
         cancellable?.cancel()
     }
 }
+

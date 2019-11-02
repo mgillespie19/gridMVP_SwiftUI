@@ -14,16 +14,8 @@ struct ExploreRootView: View {
             VStack {
                 ExploreTitleView()
                 
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(Color("Clay"))
-                        .opacity(0.8)
-                        .frame(height: 600)
-                        .cornerRadius(15)
-                        .shadow(radius: 20)
-                        .padding()
-                        .offset(y: -230)
-                }
+                ExploreSearchResultsView(viewModel: ExploreSearchViewModel())
+                    .offset(y: -230)
             }
         }.edgesIgnoringSafeArea(.all)
     }

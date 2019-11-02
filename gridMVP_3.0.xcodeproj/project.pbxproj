@@ -50,6 +50,9 @@
 		F6CDF7E4233EB3770091F622 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E3233EB3770091F622 /* SampleData.swift */; };
 		F6CDF7E7233EB5560091F622 /* FeedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E6233EB5560091F622 /* FeedHeader.swift */; };
 		F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDF7E8233EBBE20091F622 /* ProfileView.swift */; };
+		F6E5EEAA236CC58900C4FF53 /* ExploreSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E5EEA9236CC58900C4FF53 /* ExploreSearchResultsView.swift */; };
+		F6E5EEAC236CCBB600C4FF53 /* ExploreClusterMatrix1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E5EEAB236CCBB600C4FF53 /* ExploreClusterMatrix1.swift */; };
+		F6E5EEB2236D254100C4FF53 /* ExploreSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E5EEB1236D254100C4FF53 /* ExploreSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		F6CDF7E3233EB3770091F622 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		F6CDF7E6233EB5560091F622 /* FeedHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeader.swift; sourceTree = "<group>"; };
 		F6CDF7E8233EBBE20091F622 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F6E5EEA9236CC58900C4FF53 /* ExploreSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSearchResultsView.swift; sourceTree = "<group>"; };
+		F6E5EEAB236CCBB600C4FF53 /* ExploreClusterMatrix1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreClusterMatrix1.swift; sourceTree = "<group>"; };
+		F6E5EEB1236D254100C4FF53 /* ExploreSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,8 @@
 		F679A2DD2364F93A00BA7677 /* General Components */ = {
 			isa = PBXGroup;
 			children = (
+				F679A2E22365505400BA7677 /* ExploreClusterCell.swift */,
+				F6E5EEAB236CCBB600C4FF53 /* ExploreClusterMatrix1.swift */,
 				F679A2DE2364F95100BA7677 /* FilterCell.swift */,
 				F679A2E02364FC8C00BA7677 /* ExploreSearchFilterMatrix1.swift */,
 			);
@@ -268,6 +276,7 @@
 		F69F47A823429ABC005A8CB1 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				F6E5EEB1236D254100C4FF53 /* ExploreSearchViewModel.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -340,9 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				F6CDF7CC233E87800091F622 /* ExploreRootView.swift */,
+				F6E5EEA9236CC58900C4FF53 /* ExploreSearchResultsView.swift */,
 				F6CDF7D2233E9BC50091F622 /* ExploreButton.swift */,
 				F6CDF7D4233EA8350091F622 /* ExploreTitleView.swift */,
-				F679A2E22365505400BA7677 /* ExploreClusterCell.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -515,6 +524,7 @@
 				F61423C22364149300133260 /* FeedGroupRecommendationViewModel1.swift in Sources */,
 				F6CDF7D9233EAB420091F622 /* MapView.swift in Sources */,
 				F688EFD8233D4AB200323C04 /* AppDelegate.swift in Sources */,
+				F6E5EEAA236CC58900C4FF53 /* ExploreSearchResultsView.swift in Sources */,
 				F69F47B02342A017005A8CB1 /* FeedMakePostView.swift in Sources */,
 				F666952C233EBEF700AC42CA /* ProfileButton.swift in Sources */,
 				F688EFDA233D4AB200323C04 /* SceneDelegate.swift in Sources */,
@@ -527,6 +537,7 @@
 				F6CDF7E7233EB5560091F622 /* FeedHeader.swift in Sources */,
 				F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */,
 				F61423C0236413CB00133260 /* FeedGroupRecommendationBar1.swift in Sources */,
+				F6E5EEB2236D254100C4FF53 /* ExploreSearchViewModel.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F679A2D82364E42300BA7677 /* UpdateProfilePictureView.swift in Sources */,
 				F61FDA142346761E00DD4B0F /* GroupDetailViewModel.swift in Sources */,
@@ -536,6 +547,7 @@
 				F679A2DF2364F95100BA7677 /* FilterCell.swift in Sources */,
 				F679A2DA2364F6D700BA7677 /* User.swift in Sources */,
 				F6CDF7D1233E87940091F622 /* EventsRootView.swift in Sources */,
+				F6E5EEAC236CCBB600C4FF53 /* ExploreClusterMatrix1.swift in Sources */,
 				F688EFDD233D4AB200323C04 /* gridMVP_3_0.xcdatamodeld in Sources */,
 				F6C81BD3233FB44D001FF388 /* GroupDetail.swift in Sources */,
 				F6CDF7D5233EA8350091F622 /* ExploreTitleView.swift in Sources */,
