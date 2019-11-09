@@ -38,12 +38,15 @@ struct FeedPostView: View {
                 
                 Spacer()
             }
-            .padding()
+            .padding(.top)
+            .padding(.leading)
+            .padding(.trailing)
+            
+            Divider()
+            
             Text(self.postContent)
                 .font(.body)
-                .padding(.leading)
-                .padding(.trailing)
-                .padding(.bottom)
+                .padding()
         }
         .background(Color.white)
         .sheet(isPresented: $showingProfileView, onDismiss: {

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct EventsRootView: View {
+    //    var events: [CalendarEvent]
+    
     var body: some View {
         NavigationView {
             List {

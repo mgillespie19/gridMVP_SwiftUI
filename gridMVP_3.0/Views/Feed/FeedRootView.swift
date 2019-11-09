@@ -24,11 +24,19 @@ struct FeedRootView: View {
                 .listRowBackground(Color("VeryLightGrey"))
                 .listRowInsets(EdgeInsets())
                 
-                FeedGroupRecommendationBar1(viewModel: FeedGroupRecommendationViewModel1())
-                    .listRowBackground(Color("VeryLightGrey"))
-                    .listRowInsets(EdgeInsets())
-                
                 FeedPostView(profilePic: UIImage(named: "Profile Pic")!, userName: "Kanye West", postContent: "Jesus is King")
+                .listRowBackground(Color("VeryLightGrey"))
+                .listRowInsets(EdgeInsets())
+                
+                FeedPostView(profilePic: UIImage(named: "Profile Pic")!, userName: "Donald Strump", postContent: "Very kuul cayne")
+                .listRowBackground(Color("VeryLightGrey"))
+                .listRowInsets(EdgeInsets())
+                
+                FeedPostView(profilePic: UIImage(named: "Profile Pic")!, userName: "Shawn White", postContent: "I'm no longer relevant")
+                .listRowBackground(Color("VeryLightGrey"))
+                .listRowInsets(EdgeInsets())
+                
+                FeedGroupRecommendationBar1(viewModel: FeedGroupRecommendationViewModel1())
                 .listRowBackground(Color("VeryLightGrey"))
                 .listRowInsets(EdgeInsets())
             }

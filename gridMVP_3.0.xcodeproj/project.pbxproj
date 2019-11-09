@@ -34,6 +34,7 @@
 		F69F47B02342A017005A8CB1 /* FeedMakePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F47AF2342A017005A8CB1 /* FeedMakePostView.swift */; };
 		F6BC51C723639FCA00453821 /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC51C623639FCA00453821 /* FeedHeaderViewModel.swift */; };
 		F6BC51CA23640EDC00453821 /* FeedPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC51C923640EDC00453821 /* FeedPostView.swift */; };
+		F6BD3232236DCDE100F15766 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD3231236DCDE100F15766 /* EventCardView.swift */; };
 		F6C81BCC233ECB72001FF388 /* FeedButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C81BCB233ECB72001FF388 /* FeedButtonBar.swift */; };
 		F6C81BD0233FB437001FF388 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C81BCF233FB437001FF388 /* GroupCell.swift */; };
 		F6C81BD3233FB44D001FF388 /* GroupDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C81BD2233FB44D001FF388 /* GroupDetail.swift */; };
@@ -106,6 +107,7 @@
 		F69F47AF2342A017005A8CB1 /* FeedMakePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMakePostView.swift; sourceTree = "<group>"; };
 		F6BC51C623639FCA00453821 /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
 		F6BC51C923640EDC00453821 /* FeedPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostView.swift; sourceTree = "<group>"; };
+		F6BD3231236DCDE100F15766 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		F6C81BCB233ECB72001FF388 /* FeedButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedButtonBar.swift; sourceTree = "<group>"; };
 		F6C81BCF233FB437001FF388 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		F6C81BD2233FB44D001FF388 /* GroupDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetail.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				F6CDF7D0233E87940091F622 /* EventsRootView.swift */,
+				F6BD3231236DCDE100F15766 /* EventCardView.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				F6CDF7E9233EBBE20091F622 /* ProfileView.swift in Sources */,
 				F61423C0236413CB00133260 /* FeedGroupRecommendationBar1.swift in Sources */,
 				F6E5EEB2236D254100C4FF53 /* ExploreSearchViewModel.swift in Sources */,
+				F6BD3232236DCDE100F15766 /* EventCardView.swift in Sources */,
 				F688EFDF233D4AB200323C04 /* Root.swift in Sources */,
 				F679A2D82364E42300BA7677 /* UpdateProfilePictureView.swift in Sources */,
 				F61FDA142346761E00DD4B0F /* GroupDetailViewModel.swift in Sources */,
